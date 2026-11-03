@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudio Merlo · Soluciones digitales en Mar del Plata</title>
+<meta name="description" content="Webs, apps a medida, automatizaciones y reportes para empresas y emprendedores. Que tu equipo deje de perder horas en trabajo manual.">
+<meta property="og:title" content="Estudio Merlo · Soluciones digitales">
+<meta property="og:description" content="Webs, apps a medida, automatizaciones y reportes. Menos trabajo manual, más tiempo para crecer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://estudiomerlo.com.ar/">
+<meta property="og:locale" content="es_AR">
+<meta name="theme-color" content="#0D131D">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="red" aria-hidden="true"></canvas>
+
+<header class="cabecera">
+  <div class="contenedor cabecera-fila">
+    <a href="#inicio" class="logo" aria-label="Estudio Merlo, inicio">
+      <span class="logo-fino">estudio</span>
+      <span class="logo-negrita">merlo</span>
+      <span class="logo-punto late" aria-hidden="true"></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#niveles">Cómo trabajo</a>
+      <a href="#misiones">Misiones</a>
+      <a href="#jugadores">Jugadores</a>
+      <a class="boton boton-primario boton-chico" href="https://wa.me/5492234361431" target="_blank" rel="noopener">Hablemos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="figura figura-cuadro flota" aria-hidden="true"></div>
+    <div class="figura figura-bloque flota" aria-hidden="true"></div>
+    <div class="figura figura-orbita gira" aria-hidden="true"></div>
+    <div class="figura figura-circulo flota" aria-hidden="true"></div>
+    <div class="contenedor hero-contenido">
+      <span class="sobretitulo">Soluciones digitales · Mar del Plata</span>
+      <h1>Que tu equipo deje de perder horas en <span class="resaltado" id="palabra">trabajo manual</span><span class="caret" aria-hidden="true"></span></h1>
+      <p class="bajada">Webs, apps a medida, automatizaciones y reportes. Mové el mouse: así se conectan tus procesos cuando trabajan solos.</p>
+      <div class="botones">
+        <a class="boton boton-primario" href="https://wa.me/5492234361431" target="_blank" rel="noopener">Empezar la partida</a>
+        <a class="boton boton-secundario" href="#calculadora">Calcular mis horas perdidas</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="contenedor seccion">
+      <div class="encabezado aparece">
+        <span class="etiqueta">Elegí tu poder</span>
+        <h2>Cuatro herramientas para trabajar mejor</h2>
+      </div>
+      <div class="grilla grilla-4">
+        <div class="carta aparece">
+          <svg class="icono" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg>
+          <h3>Páginas web</h3>
+          <p>Sitios rápidos que muestran lo que hacés y convierten visitas en consultas.</p>
+        </div>
+        <div class="carta aparece">
+          <svg class="icono" aria-hidden="true" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4M9 7h6M9 11h6"/></svg>
+          <h3>Apps a medida</h3>
+          <p>Checklists, formularios y registros digitales para dejar atrás el papel.</p>
+        </div>
+        <div class="carta aparece">
+          <svg class="icono" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 9M20 4v5h-5M20 12a8 8 0 0 1-13.7 5.6L4 15M4 20v-5h5"/></svg>
+          <h3>Automatizaciones</h3>
+          <p>Mails, avisos, PDFs y cargas de datos que se hacen solos.</p>
+        </div>
+        <div class="carta aparece">
+          <svg class="icono" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          <h3>Reportes y datos</h3>
+          <p>Tableros claros para ver cómo va tu negocio y decidir con números reales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculadora" class="banda">
+    <div class="figura figura-calc flota" aria-hidden="true"></div>
+    <div class="contenedor seccion calc">
+      <div class="calc-controles aparece">
+        <span class="etiqueta">Calculadora</span>
+        <h2>¿Cuánto tiempo se le escapa a tu equipo?</h2>
+        <div class="control">
+          <label for="personas"><span>Personas haciendo tareas manuales</span><strong id="personas-valor">5</strong></label>
+          <input id="personas" type="range" min="1" max="30" step="1" value="5">
+        </div>
+        <div class="control">
+          <label for="minutos"><span>Minutos por día que pierde cada una</span><strong id="minutos-valor">60 min</strong></label>
+          <input id="minutos" type="range" min="10" max="240" step="10" value="60">
+        </div>
+      </div>
+      <div class="calc-resultado aparece" aria-live="polite">
+        <span class="calc-titulo">Horas al año que podrías recuperar</span>
+        <span class="calc-numero" id="horas">1.200</span>
+        <div class="barra" aria-hidden="true"><div class="barra-relleno" id="barra"></div></div>
+        <span class="calc-nota">Equivale a <strong id="jornadas">150 jornadas</strong> de 8 horas. Estimación con 5 días por semana y 48 semanas al año.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="niveles">
+    <div class="contenedor seccion">
+      <div class="encabezado aparece">
+        <span class="etiqueta">Cómo trabajo</span>
+        <h2>Cuatro niveles hasta el objetivo</h2>
+      </div>
+      <div class="camino" aria-hidden="true"></div>
+      <ol class="grilla grilla-4 niveles">
+        <li class="carta aparece"><span class="nivel">Nivel 1</span><h3>Diagnóstico</h3><p>Charlamos y detectamos dónde se pierde tiempo.</p></li>
+        <li class="carta aparece"><span class="nivel">Nivel 2</span><h3>Propuesta</h3><p>Una solución concreta, con plazos y presupuesto cerrado.</p></li>
+        <li class="carta aparece"><span class="nivel">Nivel 3</span><h3>Desarrollo</h3><p>Lo construyo y lo probamos juntos antes de lanzarlo.</p></li>
+        <li class="carta aparece"><span class="nivel nivel-final">Nivel final</span><h3>Acompañamiento</h3><p>Capacito a tu equipo y sigo disponible para mejoras.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="misiones" class="banda">
+    <div class="figura figura-orbita-chica gira" aria-hidden="true"></div>
+    <div class="contenedor seccion">
+      <div class="encabezado aparece">
+        <span class="etiqueta">Misiones</span>
+        <h2>Empresas que ya trabajan mejor</h2>
+        <p class="contador" id="contador-misiones"></p>
+      </div>
+      <div class="grilla grilla-2" id="lista-misiones"></div>
+    </div>
+  </section>
+
+  <section id="jugadores">
+    <div class="contenedor seccion">
+      <div class="encabezado aparece">
+        <span class="etiqueta">Jugadores</span>
+        <h2>Quiénes están detrás de cada misión</h2>
+      </div>
+      <div class="grilla grilla-jugadores" id="lista-jugadores"></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto-seccion">
+    <div class="contenedor">
+      <div class="contacto">
+        <div class="contacto-orbita gira" aria-hidden="true"></div>
+        <div class="contacto-bloque flota" aria-hidden="true"></div>
+        <div class="contacto-contenido">
+          <span class="contacto-etiqueta">Press start</span>
+          <h2 class="aparece">¿Listo para el <strong>siguiente nivel?</strong></h2>
+          <p>Contame qué tarea te gustaría resolver y te respondo con una propuesta.</p>
+          <div class="botones">
+            <a class="boton boton-oscuro" href="https://wa.me/5492234361431" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+            <a class="boton boton-borde" href="mailto:belu.merlo@hotmail.com">belu.merlo@hotmail.com</a>
+            <a class="boton boton-borde" href="https://www.instagram.com/estudiomerloo" target="_blank" rel="noopener">@estudiomerloo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-fila">
+    <span>© <span id="anio">2026</span> Estudio Merlo · Soluciones digitales</span>
+    <span>Mar del Plata, Argentina · Atención remota en todo el país</span>
+  </div>
+</footer>
+
+<script src="datos/misiones.js"></script>
+<script src="datos/jugadores.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
